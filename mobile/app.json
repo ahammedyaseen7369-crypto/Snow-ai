@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Snow AI",
+    "slug": "snow-ai",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#080b10",
+    "splash": {
+      "backgroundColor": "#080b10"
+    },
+    "android": {
+      "package": "com.snowai.ultralite",
+      "backgroundColor": "#080b10",
+      "permissions": [
+        "RECORD_AUDIO",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_MICROPHONE",
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        { "android": { "minSdkVersion": 24 } }
+      ]
+    ]
+  }
+}
