@@ -11,6 +11,6 @@
 // This file is the only thing you should need to edit to point the app at
 // a different backend.
 
-export const API_BASE_URL = "http://10.0.2.2:8420";
+export const API_BASE_URL = "http://10.220.162.156:8000";
 
 export const REQUEST_TIMEOUT_MS = 30000; // TinyLlama on modest hardware can be slow
