@@ -11,6 +11,7 @@
     },
     "android": {
       "package": "com.snowai.ultralite",
+      "usesCleartextTraffic": true,
       "backgroundColor": "#080b10",
       "permissions": [
         "RECORD_AUDIO",
@@ -22,8 +23,18 @@
     "plugins": [
       [
         "expo-build-properties",
-        { "android": { "minSdkVersion": 24 } }
+        {
+          "android": {
+            "minSdkVersion": 24
+          }
+        }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "ad4a208f-ec07-436d-b35f-da167eaa2dca"
+      }
+    },
+    "owner": "yaseen37s-personal"
   }
 }
