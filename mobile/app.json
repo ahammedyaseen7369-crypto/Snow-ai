@@ -12,18 +12,36 @@
     "android": {
       "package": "com.snowai.ultralite",
       "backgroundColor": "#080b10",
+      "usesCleartextTraffic": true,
       "permissions": [
         "RECORD_AUDIO",
         "FOREGROUND_SERVICE",
         "FOREGROUND_SERVICE_MICROPHONE",
-        "POST_NOTIFICATIONS"
+        "POST_NOTIFICATIONS",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
       ]
     },
     "plugins": [
       [
         "expo-build-properties",
         { "android": { "minSdkVersion": 24 } }
+      ],
+      [
+        "expo-camera",
+        { "cameraPermission": "Allow Snow AI to use your camera for vision analysis?" }
+      ],
+      [
+        "expo-image-picker",
+        { "photosPermission": "Allow Snow AI to access photos for analysis?" }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "ad4a208f-ec07-436d-b35f-da167eaa2dca"
+      }
+    },
+    "owner": "yaseen37s-personal"
   }
 }
